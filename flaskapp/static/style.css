@@ -26,3 +26,122 @@ a{
 
 
 
+.body{
+    top: 0;
+    left: 0;
+}
+.timeline{
+    position: relative;
+}
+.timeline:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 5px;
+    height: 100%;
+}
+.timeline ul li{
+    position: relative;
+    list-style: none;
+    padding: 30px ;
+    width: 50%;
+    text-align: justify;
+}
+.timeline ul li:nth-child(odd){
+    left: 0;
+    text-align: right;
+}
+.timeline ul li:nth-child(even){
+    right: 0;
+    margin-left: 47%;
+    text-align: left;
+}
+.content{
+    background-color: rgba(236,229,238,0.82);
+    box-sizing: border-box;
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+.timeline ul li:nth-child(even):before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border: red solid 2px;
+    border-radius: 50%;
+}
+.timeline ul li:nth-child(odd):before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: red solid 2px;
+
+}
+@media screen and (max-width: 750px){
+
+    .timeline:before{
+        content: '';
+        position: absolute;
+        left: 5%;
+        width: 5px;
+        height: 100%;
+    }
+
+
+    .timeline ul li:nth-child(odd){
+        left: 0;
+        text-align: justify;
+    }
+    .timeline ul li:nth-child(even){
+        left: 0;
+        text-align: justify;
+        margin-left: 0%;
+    }
+
+    .timeline ul li:nth-child(odd):before{
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: -10%;
+        background-color: white;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: red solid 2px;
+
+    }
+
+    .timeline ul li:nth-child(even):before{
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: -10%;
+        background-color: white;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: red solid 2px;
+
+    }
+
+    li{
+        position: relative;
+        list-style: none;
+        padding: 20px ;
+        width: 100%;
+        text-align: justify;
+    }
+}
+
+
+
+
