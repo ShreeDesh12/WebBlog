@@ -1,0 +1,28 @@
+* {
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+.flex-row a{
+    color: #b2e4ee;
+}
+a{
+    text-decoration: none;
+}
+.padding div div{
+    padding: 10px;
+}
+
+.q.form{
+    background-color: #eef;
+    margin:0px;
+}
+@media screen and (min-width: 500px) {
+    .q-form{
+        margin-right: 40%;
+        margin-left: 10%;
+        padding: 30px;
+        text-shadow: 1px 1px offwhite;
+    }
+}
+
+
+
