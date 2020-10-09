@@ -11,6 +11,10 @@ def home():
 def func():
     return render_template('about.html',title = "About")
 
+@app.route('/timeline')
+def timeline();
+    return render_template('timeline.html',title = "Timeline")
+
 @app.route('/contact', methods = [ 'GET' , 'POST' ])
 def contact_page():
     form = queryForm()
